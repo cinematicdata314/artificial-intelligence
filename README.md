@@ -1,51 +1,115 @@
-# Artificial-Intelligence
-Examination of current concepts and techniques in artificial intelligence and machine learning. Topics include knowledge representation, automated reasoning, heuristic search, machine learning and knowledge-based systems. Extensive use of case studies and current applications.
+# Artificial Intelligence Algorithms (Python)
 
-## A1
-In this part of the assignment, you must write code in Python to 
-implement given two search algorithms to solve Travelling salesman problem (TSP) using a list of 
-cities (“city_data_50.csv” available under the Assignment 1 section on Myls that include 
-“latitude” and “longitude” of each city). You will be in charge of a "Travelling Salesman" agent 
-that needs to find the shortest route and distance to visit all the cities. You would have to create 
-a module to calculate the distance matrix to find the Euclidian distances between the cities for 
-further analysis. Then implement functions for the following search algorithms for solving TSP:  
+This repository contains implementations of core **Artificial Intelligence and Machine Learning algorithms written from scratch in Python**.  
+The projects focus on search algorithms, evolutionary computation, and unsupervised learning, demonstrating how classic AI problems can be solved without relying on external ML libraries.
 
-a) Depth-first search  
+## Topics Covered
 
-b) Breadth-first search
+- Heuristic search algorithms  
+- Clustering algorithms  
+- Distance computation and optimization problems  
+- Data visualization and algorithm analysis  
 
-## A2
-In this part of the assignment, you write code to implement a genetic algorithm to solve the N-queens problem. The classic N-Queens problem originated from chess, and the 8 x 8 chessboard was its early playground. The task was to place eight chess queens on the board without two of them threatening each other. In other words, no two queens can share the same row, same column, or same diagonal. The N-Queens problem is similar, using an N x N chessboard and N chess queens.
+All algorithms were implemented manually to demonstrate a strong understanding of the underlying concepts.
 
-## A3
-Given the 'kmeans.csv' data set (can be downloaded from MyIs) with n = 30 examples and 2 features.  
+---
 
-a) Plot the examples/observations.  
+# Projects
 
-b) Write a function kmeans() that implements K-means clustering algorithm for k clusters, such that:
+## 1. Travelling Salesman Problem – Search Algorithms
 
-a. It chooses the first k data points as initial centroids.  
+Implemented search-based approaches to solve the **Travelling Salesman Problem (TSP)** using geographic city coordinates.
 
-b. Assign each observation to the centroid to which it is closest, in terms of Euclidean distance.  
+### Overview
+The Travelling Salesman Problem is a classic optimization problem where the goal is to determine the shortest route that visits each city exactly once and returns to the starting point.
 
-c. Denote the cluster label for each data point  
+### Implementation
+- Built a **distance matrix generator** using Euclidean distance calculated from city latitude and longitude coordinates.
+- Implemented search algorithms to explore possible routes and determine optimal or near-optimal paths.
 
-d. Compute new centroids for each cluster by averaging the data points in each cluster  
+### Algorithms Implemented
+- **Depth-First Search (DFS)**
+- **Breadth-First Search (BFS)**
 
-e. Repeat steps (ii) to (iv) until the centroids stop changing.  
+### Key Features
+- Custom distance matrix computation
+- Graph traversal for route exploration
+- Route distance evaluation and comparison
+- Performance comparison between DFS and BFS strategies
 
-Note: Do not use libraries and write your own K-means clustering algorithm.  
+### Technologies
+- Python
+- CSV data processing
+- Algorithm design and search strategies
 
+---
 
-c) Plot the final clusters at k=2  
+## 2. Genetic Algorithm – N Queens Optimization
 
-d) Report the final cluster sizes.  
+Developed a **Genetic Algorithm** to solve the classical **N-Queens optimization problem**.
 
-e) Report the final centroids.  
+### Problem Description
+The objective is to place **N chess queens on an N×N board** such that no two queens threaten each other.
 
+Constraints:
+- No queens share the same row
+- No queens share the same column
+- No queens share the same diagonal
 
+### Implementation
+A population-based evolutionary algorithm was designed to iteratively improve candidate solutions.
 
+### Genetic Algorithm Components
+- Chromosome representation of board configurations
+- Fitness function evaluating number of queen conflicts
+- Parent selection
+- Crossover and mutation operations
+- Iterative population evolution toward optimal solutions
 
+### Key Concepts Demonstrated
+- Evolutionary search techniques
+- Fitness evaluation
+- Optimization using stochastic processes
 
+### Technologies
+- Python
+- Evolutionary algorithm design
 
+---
 
+## 3. K-Means Clustering From Scratch
+
+Implemented the **K-Means clustering algorithm from scratch** to group observations into clusters based on feature similarity.
+
+### Dataset
+- 30 observations
+- 2 numerical features
+
+### Implementation Details
+The clustering algorithm was implemented without using machine learning libraries.
+
+### Algorithm Steps
+1. Select the first **k data points as initial centroids**
+2. Assign each observation to the nearest centroid using **Euclidean distance**
+3. Label each data point according to its assigned cluster
+4. Recalculate centroids by averaging all points within each cluster
+5. Repeat the process until centroids no longer change
+
+### Outputs
+- Final cluster assignments
+- Cluster sizes
+- Final centroid coordinates
+- Visualization of clustered data
+
+### Visualization
+Scatter plots were generated to display:
+- Original observations
+- Final cluster groupings
+- Cluster centroids
+
+### Technologies
+- Python
+- Data visualization
+- Unsupervised learning algorithms
+
+---
