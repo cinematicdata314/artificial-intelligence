@@ -44,7 +44,7 @@ The Travelling Salesman Problem is a classic optimization problem where the goal
 
 ---
 
-## 2. Genetic Algorithm – N Queens Optimization
+## 2. N Queens Optimization
 
 Developed a **Genetic Algorithm** to solve the classical **N-Queens optimization problem**.
 
