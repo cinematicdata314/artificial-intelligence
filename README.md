@@ -1,4 +1,4 @@
-# Artificial Intelligence Algorithms (Python)
+# Artificial Intelligence Algorithms
 
 This repository contains implementations of core **Artificial Intelligence and Machine Learning algorithms written from scratch in Python**.  
 The projects focus on search algorithms, evolutionary computation, and unsupervised learning, demonstrating how classic AI problems can be solved without relying on external ML libraries.
