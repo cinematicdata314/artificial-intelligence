@@ -77,7 +77,7 @@ A population-based evolutionary algorithm was designed to iteratively improve ca
 
 ---
 
-## 3. K-Means Clustering From Scratch
+## 3. K-Means Clustering Implementation 
 
 Implemented the **K-Means clustering algorithm from scratch** to group observations into clusters based on feature similarity.
 
